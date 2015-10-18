@@ -5,6 +5,7 @@ from ckeditor.widgets import DEFAULT_CONFIG
 
 default_app_config = 'leonardo_ckeditor.Config'
 
+DEFAULT_CONFIG.update('allowedContent', True)
 
 LEONARDO_APPS = [
     'leonardo_ckeditor',
@@ -16,6 +17,7 @@ LEONARDO_CONFIG = {
     'CKEDITOR_UPLOAD_PATH': ('uploads/', ('CKEditor upload directory')),
     'CKEDITOR_CONFIGS': ({'default': DEFAULT_CONFIG}, 'ckeditor config')
 }
+LEONARDO_OPTGROUP = 'CKEditor'
 
 LEONARDO_JS_COMPRESS_FILES = [
     "ckeditor/ckeditor/ckeditor.js",
