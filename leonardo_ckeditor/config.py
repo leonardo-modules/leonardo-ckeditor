@@ -22,4 +22,5 @@ DEFAULT_CONFIG.update({'toolbar_Full': [
         "Smiley", "SpecialChar", "PageBreak", "Iframe"],
     ["Styles", "Format", "Font", "FontSize"],
     ["TextColor", "BGColor"],
-    ["Maximize", "ShowBlocks", "-", "About"]]})
+    ["Maximize", "ShowBlocks"],
+    ["Source"]]})
