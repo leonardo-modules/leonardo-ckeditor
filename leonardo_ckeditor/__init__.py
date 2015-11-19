@@ -1,11 +1,9 @@
 
 from django.apps import AppConfig
 
-from ckeditor.widgets import DEFAULT_CONFIG
+from .config import DEFAULT_CONFIG
 
 default_app_config = 'leonardo_ckeditor.Config'
-
-DEFAULT_CONFIG.update({'allowedContent': True})
 
 LEONARDO_APPS = [
     'leonardo_ckeditor',
