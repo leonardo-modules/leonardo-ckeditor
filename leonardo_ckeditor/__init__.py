@@ -1,7 +1,7 @@
 
 from django.apps import AppConfig
 
-from .config import DEFAULT_CONFIG
+from .ckeditor_config import DEFAULT_CONFIG
 
 default_app_config = 'leonardo_ckeditor.Config'
 
