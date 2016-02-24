@@ -1,4 +1,5 @@
 (function() {
+  loadResource(STATIC_URL + "ckeditor/ckeditor/ckeditor.js");
   var djangoJQuery;
   if (typeof jQuery == 'undefined' && typeof django == 'undefined') {
     console.error('ERROR django-ckeditor missing jQuery. Set CKEDITOR_JQUERY_URL or provide jQuery in the template.');

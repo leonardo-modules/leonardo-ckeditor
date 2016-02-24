@@ -17,9 +17,6 @@ LEONARDO_CONFIG = {
 }
 LEONARDO_OPTGROUP = 'CKEditor'
 
-LEONARDO_JS_COMPRESS_FILES = [
-    "ckeditor/ckeditor/ckeditor.js",
-]
 LEONARDO_JS_FILES = [
     "leonardo_ckeditor/js/ckeditor-modal-init.js",
 ]
