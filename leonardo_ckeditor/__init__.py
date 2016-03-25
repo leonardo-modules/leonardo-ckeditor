@@ -12,7 +12,7 @@ LEONARDO_APPS = [
 ]
 
 LEONARDO_CONFIG = {
-    'CKEDITOR_UPLOAD_PATH': ('uploads/', ('CKEditor upload directory')),
+    'CKEDITOR_UPLOAD_PATH': ('', ('CKEditor upload directory')),
     'CKEDITOR_CONFIGS': ({'default': DEFAULT_CONFIG}, 'ckeditor config')
 }
 LEONARDO_OPTGROUP = 'CKEditor'
@@ -33,6 +33,6 @@ class Config(AppConfig):
     verbose_name = "leonardo-ckeditor"
 
     def ready(self):
-        from ckeditor.widgets import CKEditorWidget
+        from ckeditor_uploader.widgets import CKEditorUploadingWidget
         from leonardo.module.web.widget.htmltext import models
-        models.HtmlTextWidget.widgets['text'] = CKEditorWidget()
+        models.HtmlTextWidget.widgets['text'] = CKEditorUploadingWidget()
