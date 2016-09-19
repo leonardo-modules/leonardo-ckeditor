@@ -5,6 +5,7 @@ from .ckeditor_config import DEFAULT_CONFIG
 
 default_app_config = 'leonardo_ckeditor.Config'
 
+
 LEONARDO_APPS = [
     'leonardo_ckeditor',
     'ckeditor',
@@ -31,8 +32,3 @@ LEONARDO_URLS_CONF = 'ckeditor_uploader.urls'
 class Config(AppConfig):
     name = 'leonardo_ckeditor'
     verbose_name = "leonardo-ckeditor"
-
-    def ready(self):
-        from ckeditor_uploader.widgets import CKEditorUploadingWidget
-        from leonardo.module.web.widget.htmltext import models
-        models.HtmlTextWidget.widgets['text'] = CKEditorUploadingWidget()
